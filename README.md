@@ -1,5 +1,3 @@
-This project applies PySpark to a warehouse-style sales dataset to build a modelling-ready analytics layer and predictive models. I segment transactions into High-Value vs Regular using a quantile threshold (rather than discarding valid high-value orders as “outliers”), then train a Spark ML Pipeline (encoding → feature assembly → Logistic Regression) to predict high-value customer behaviour. The notebook includes model confidence interpretation and additional regression work for car-ownership prediction to demonstrate end-to-end feature preparation, training, and evaluation.
-
 # Big Data Processing (PySpark) — Customer Value Segmentation & Prediction
 
 This project uses **PySpark** on a warehouse-style sales dataset to build an analytics-ready modelling layer and train predictive models.
@@ -84,5 +82,6 @@ data integration & modelling-ready dataset construction (joins, cleaning, qualit
 predictive analytics (Spark ML + evaluation)
 
 process discipline (explicit outlier policy, reproducible pipeline)
+
 
 
