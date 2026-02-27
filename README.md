@@ -48,34 +48,35 @@ If your dataset lives elsewhere, set an environment variable:
 ```powershell
 $env:DATA_DIR="C:\path\to\your\data"
 ```
-CMD
+## CMD
 
 set DATA_DIR=C:\path\to\your\data
-How to run
-Option A — View results (no setup)
+
+## How to run
+## Option A — View results (no setup)
 Open the notebook in GitHub:
 
 notebooks/BigDataAssessment.ipynb
 
-Option B — Run locally
+## Option B — Run locally
 Create + activate a virtual environment
 
 python -m venv .venv
-Windows (PowerShell)
+## Windows (PowerShell)
 
 .\.venv\Scripts\Activate.ps1
-macOS/Linux
+## macOS/Linux
 
 source .venv/bin/activate
-Install dependencies
+## Install dependencies
 
 pip install -r requirements.txt
-Launch the notebook
+## Launch the notebook
 
 python -m notebook
 Open: notebooks/BigDataAssessment.ipynb
 
-Portfolio note (KTP-ready evidence)
+## Portfolio note (KTP-ready evidence)
 This repo demonstrates practical skills in:
 
 data integration & modelling-ready dataset construction (joins, cleaning, quality checks)
@@ -83,4 +84,5 @@ data integration & modelling-ready dataset construction (joins, cleaning, qualit
 predictive analytics (Spark ML + evaluation)
 
 process discipline (explicit outlier policy, reproducible pipeline)
+
 
