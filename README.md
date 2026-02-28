@@ -35,16 +35,42 @@ Core idea: instead of deleting legitimate high-value orders as “outliers”, I
 - README.md
 
 
+
 ## Dataset setup
 Place all source CSV files in:
 - `data/` (recommended default)
+
+The notebook auto-loads every `.csv` in `data/` and stores each table as a Spark DataFrame using the filename (without `.csv`) as the key.
+
+### Expected CSV files
+Filenames should match:
+
+- DimAccount.csv
+- DimCurrency.csv
+- DimCustomer.csv
+- DimDate.csv
+- DimDepartmentGroup.csv
+- DimGeography.csv
+- DimOrganization.csv
+- DimProduct.csv
+- DimProductCategory.csv
+- DimProductSubcategory.csv
+- DimPromotion.csv
+- DimReseller.csv
+- DimSalesReason.csv
+- DimSalesTerritory.csv
+- DimScenario.csv
+- FactCallCenter.csv
+- FactCurrencyRate.csv
+- FactFinance.csv
+- FactInternetSales.csv
+- FactSalesTargets.csv
 
 If your dataset lives elsewhere, set an environment variable:
 
 **PowerShell**
 ```powershell
 $env:DATA_DIR="C:\path\to\your\data"
-```
 ## CMD
 ```powershell
 set DATA_DIR=C:\path\to\your\data
@@ -85,6 +111,7 @@ data integration & modelling-ready dataset construction (joins, cleaning, qualit
 predictive analytics (Spark ML + evaluation)
 
 process discipline (explicit outlier policy, reproducible pipeline)
+
 
 
 
