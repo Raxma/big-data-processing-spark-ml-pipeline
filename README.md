@@ -71,6 +71,7 @@ If your dataset lives elsewhere, set an environment variable:
 **PowerShell**
 ```powershell
 $env:DATA_DIR="C:\path\to\your\data"
+```
 ## CMD
 ```powershell
 set DATA_DIR=C:\path\to\your\data
@@ -111,6 +112,7 @@ data integration & modelling-ready dataset construction (joins, cleaning, qualit
 predictive analytics (Spark ML + evaluation)
 
 process discipline (explicit outlier policy, reproducible pipeline)
+
 
 
 
