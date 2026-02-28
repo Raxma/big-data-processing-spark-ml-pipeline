@@ -27,13 +27,12 @@ Core idea: instead of deleting legitimate high-value orders as “outliers”, I
 - For `SalesAmount`, avoids removal because extreme values can be legitimate → uses segmentation instead
 
 ## Project structure
-notebooks/
-BigDataAssessment.ipynb
-data/
-(place CSV files here - ignored by git)
-requirements.txt
-.gitignore
-README.md
+- notebooks/
+- BigDataAssessment.ipynb
+- data/ (place CSV files here - ignored by git)
+- requirements.txt
+- .gitignore
+- README.md
 
 
 ## Dataset setup
@@ -47,33 +46,37 @@ If your dataset lives elsewhere, set an environment variable:
 $env:DATA_DIR="C:\path\to\your\data"
 ```
 ## CMD
-
+```powershell
 set DATA_DIR=C:\path\to\your\data
-
+```
 ## How to run
 ## Option A — View results (no setup)
 Open the notebook in GitHub:
-
+```powershell
 notebooks/BigDataAssessment.ipynb
-
+```
 ## Option B — Run locally
 Create + activate a virtual environment
-
+```powershell
 python -m venv .venv
+```
 ## Windows (PowerShell)
-
+```powershell
 .\.venv\Scripts\Activate.ps1
+```
 ## macOS/Linux
-
+```powershell
 source .venv/bin/activate
+```
 ## Install dependencies
-
+```powershell
 pip install -r requirements.txt
+```
 ## Launch the notebook
-
+```powershell
 python -m notebook
 Open: notebooks/BigDataAssessment.ipynb
-
+```
 ## Portfolio note (KTP-ready evidence)
 This repo demonstrates practical skills in:
 
@@ -82,6 +85,7 @@ data integration & modelling-ready dataset construction (joins, cleaning, qualit
 predictive analytics (Spark ML + evaluation)
 
 process discipline (explicit outlier policy, reproducible pipeline)
+
 
 
 
